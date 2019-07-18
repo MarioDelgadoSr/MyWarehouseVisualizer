@@ -1,0 +1,82 @@
+/* Just lie w2ui's class, but with gridColumnSelection class name*/ 
+.w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.gridColumnSelection,
+.w2ui-grid .w2ui-grid-body .w2ui-grid-frecords table tr.gridColumnSelection,
+.w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr td.gridColumnSelection,
+.w2ui-grid .w2ui-grid-body .w2ui-grid-frecords table tr td.gridColumnSelection {
+  color: #000000 !important;
+  background-color: #b6d5ff !important;
+}
+
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 550px;
+  margin: 50px auto;
+  padding: 20px;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+
+
+.uploadButton {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.uploadButton:hover {
+  background: #ddd;
+}
+
+/*https://stackoverflow.com/questions/7059394/how-to-position-a-table-at-the-center-of-div-horizontally-vertically */
+.wrapper {
+    position: absolute;
+    left: 50%; top: 50%; /*move the object to the center of the parent object*/
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*these 5 settings change the base (or registration) point of the wrapper object to it's own center - so we align child center with parent center*/
+}
+
+
+
+/******************************************************************************
+ * CSS Spinner
+ *
+ * http://tobiasahlin.com/spinkit/
+ */
+
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  background-color: #333;
+
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+	-webkit-transform: scale(1.0);
+	opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+	-webkit-transform: scale(0);
+	transform: scale(0);
+  } 100% {
+	-webkit-transform: scale(1.0);
+	transform: scale(1.0);
+	opacity: 0;
+  }
+}

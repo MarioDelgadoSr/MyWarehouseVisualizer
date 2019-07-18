@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Merger</title>
+
+		
+		<script src="translations.js"></script>
+		<script src="translations2.js"></script>
+	
+		
+	</head>
+
+
+	<script>
+	
+	function merge(){
+
+	var newKeys = Object.keys(translationsNew);
+	newKeys.forEach(function(key) {
+			
+		var newKeys2 = Object.keys(translationsNew[key]);
+		
+		newKeys2.forEach(function(key2){
+			translations[key][key2] = translationsNew[key][key2];
+		});
+		
+		translations[key]["datGuiFolders.analyze.folders.data"] = translationsNew[key]["dataGridTitle"];
+	
+	});
+	
+	
+	document.getElementById('txtArea').value = JSON.stringify(translations);
+	
+	}
+	
+	
+	</script>
+
+
+	<body onload="merge()">Translation Merge</body>
+	
+	<textarea id ="txtArea" rows="100" cols="100"></textarea>
+	
+	
+	
+</html>
