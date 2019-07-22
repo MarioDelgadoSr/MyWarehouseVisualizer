@@ -3,13 +3,11 @@
 		<div id="drop-area">
 			<!--<center><h1><img src="img/MyDataVisualizerLogo.png" height="100" width="100"> My Data Visualizer</h1></center> -->
 			<center><span id="mdvScales" height="100" width="100"></span></center>
-			<center><span style="font-size: x-large; font-family: Arial, Helvetica, sans-serif;">MY DATA VISUALIZER</span></center>
+			<center><span style="font-size: x-large; font-family: Arial, Helvetica, sans-serif;">MY WAREHOUSE VISUALIZER</span></center>
 			<p>
 				<center><img src="img/dragDrop.png" height="115" width="115"></img></center><br />
 				<ul>
-					<li>A glTF file (<a target="_blank" href="https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#glb-file-format-specification">.gltf or .glb</a>) for your visual with embedded data.</li>
-					<br /><br /><center><i><b>Or</b></i></center><br /><br />
-					<li>A glTF file (<a target="_blank" href="https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#glb-file-format-specification">.gltf or .glb</a>) for your visual and the csv (<a target="_blank" href="https://en.wikipedia.org/wiki/Comma-separated_values">.csv</a>) with the visual's data.</li>
+					<li>Inventory and Layout Data in .CSV files</li>
 				</ul>
 			</p>
 			<input type="file" id="fileElem" multiple="true" accept=".gltf,.csv" onchange="fnHandleFileUploads({originalEvent: {dataTransfer: {files: this.files} } } )" style="display:none;"></input>
@@ -22,21 +20,6 @@
 					</path>
 				</svg>
 			</label>
-			<br /><br />
-			<div><b>Note</b>: This version of <b><i>My Data Visualizer</i></b>: 
-				<ul>
-					<li>Supports <a target= "_blank" href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0">glTF 2.0</a>.  
-						<span>Use the </span><a target="_blank"  href="http://github.khronos.org/glTF-Validator/">Khronos glTF Validator</a> to validate your .gltf/.glb file(s).
-					</li>
-					<li><span>Requires that the</span>
-						<a target="_blank" href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#binary-data-storage">buffers</a> and 
-						<a target="_blank" href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#images">images</a> for the .gltf file are referenced with embedded
-						<a target="_blank" href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#uris">Data URIs.</a>
-					</li>
-				</ul>	
-			</div>		
-			<br />
-			
 		
 		</div>
 </div>		
