@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<title>My Warehouse Visualizer</title>	
-		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta http-equiv="Expires" content="0" />
-		<meta name="description" content="The easiest way to visualize your warehouse data.">
-		<meta name="keywords" content="SCM, Supply Chain Management, Data Visualization">
-		<meta name="robots" content="index, follow">
-		<meta name="copyright" content="Mario Delgado">
-		<meta name="language" content="EN">
-		<meta name="author" content="Mario Delgado">
-		<meta name="creationdate" content="7/1/2019">
-		<meta name="distribution" content="global">
-		<meta name="rating" content="general">		
-		<meta charset="utf-8"/>
 
-		<link rel="icon" href="http://mydatavisualizer.com/wp-content/uploads/2019/06/cropped-MyDataVisualizerLogo-1-32x32.png" sizes="32x32" />
-		<link rel="icon" href="http://mydatavisualizer.com/wp-content/uploads/2019/06/cropped-MyDataVisualizerLogo-1-192x192.png" sizes="192x192" />
-		<link rel="shortcut icon" href="http://mydatavisualizer.com/wp-content/uploads/2019/06/cropped-MyDataVisualizerLogo-1-32x32.png" sizes="32x32" />	
-		<link rel="apple-touch-icon-precomposed" href="http://mydatavisualizer.com/wp-content/uploads/2019/06/cropped-MyDataVisualizerLogo-1-180x180.png" />
-		<meta name="msapplication-TileImage" content="http://mydatavisualizer.com/wp-content/uploads/2019/06/cropped-MyDataVisualizerLogo-1-270x270.png" />
+<head>
+    <title>My Warehouse Visualizer</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="description" content="The easiest way to visualize your warehouse data.">
+    <meta name="keywords" content="SCM, Supply Chain Management, Data Visualization">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="Mario Delgado">
+    <meta name="language" content="EN">
+    <meta name="author" content="Mario Delgado">
+    <meta name="creationdate" content="7/1/2019">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta charset="utf-8" />
 
-		<!--D3 -->
-		<script src="lib/d3.v5.9.2.js" charset="utf-8"></script>
-		<script src="lib/d3-scale-chromatic.v1.min.js"></script>
-		<script src="lib/d3-color.v1.min.js"></script>
-		<script src="lib/d3-interpolate.v1.min.js"></script>
-		<script src="lib/d3-legend.min.js" charset="utf-8"></script> <!--https://github.com/susielu/d3-legend -->
+    <link rel="icon" href="http://mydatavisualizer.com/wp-content/uploads/2019/06/cropped-MyDataVisualizerLogo-1-32x32.png" sizes="32x32" />
+    <link rel="icon" href="http://mydatavisualizer.com/wp-content/uploads/2019/06/cropped-MyDataVisualizerLogo-1-192x192.png" sizes="192x192" />
+    <link rel="shortcut icon" href="http://mydatavisualizer.com/wp-content/uploads/2019/06/cropped-MyDataVisualizerLogo-1-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon-precomposed" href="http://mydatavisualizer.com/wp-content/uploads/2019/06/cropped-MyDataVisualizerLogo-1-180x180.png" />
+    <meta name="msapplication-TileImage" content="http://mydatavisualizer.com/wp-content/uploads/2019/06/cropped-MyDataVisualizerLogo-1-270x270.png" />
 
-		<!--jQuery-->
-		<script src="lib/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <!--D3 -->
+    <script src="lib/d3.v5.9.2.js" charset="utf-8"></script>
+    <script src="lib/d3-scale-chromatic.v1.min.js"></script>
+    <script src="lib/d3-color.v1.min.js"></script>
+    <script src="lib/d3-interpolate.v1.min.js"></script>
+    <script src="lib/d3-legend.min.js" charset="utf-8"></script>
+    <!--https://github.com/susielu/d3-legend -->
 
-		<!--w2ui http://w2ui.com/web/ -->
-		<link rel="stylesheet" type="text/css" href="css/w2ui.min.css" />			
-		<script src="lib/w2ui.1.5x.min.js" charset="utf-8"></script> 
+    <!--jQuery-->
+    <script src="lib/jquery-3.3.1.min.js" charset="utf-8"></script>
 
-		<!--Radial Slider https://github.com/maslick/radiaSlider  -->
-		<script src="lib/slider-circular.js"></script> 
+    <!--w2ui http://w2ui.com/web/ -->
+    <link rel="stylesheet" type="text/css" href="css/w2ui.min.css" />
+    <script src="lib/w2ui.1.5x.min.js" charset="utf-8"></script>
 
-		<!--ThreeJS -->
-		<script src="lib/three.min.js"></script>
-		<script src="lib/Detector.js"></script> 
-		<script src="lib/WebGL.js"></script>  <!-- https://threejs.org/docs/index.html#manual/en/introduction/WebGL-compatibility-check -->
-		<script src="lib/stats.js"></script>  <!-- Customized for Height -->
-		<script src="lib/OrbitControls.js"></script>
+    <!--Radial Slider https://github.com/maslick/radiaSlider  -->
+    <script src="lib/slider-circular.js"></script>
 
-		<!-- Demo Data -->
-		<script src="data/warehouseList.js"></script>		
+    <!--ThreeJS -->
+    <script src="lib/three.min.js"></script>
+    <script src="lib/Detector.js"></script>
+    <script src="lib/WebGL.js"></script> <!-- https://threejs.org/docs/index.html#manual/en/introduction/WebGL-compatibility-check -->
+    <script src="lib/stats.js"></script> <!-- Customized for Height -->
+    <script src="lib/OrbitControls.js"></script>
 
-		<!--Translations and Data Visualizer Code -->
-		<link rel="stylesheet" href="css/dataVisualizer.css">
-		<script src="translations/translations.js"></script>
-		<script>
-			
-			var scriptType = "Obfuscated";
-			scriptType = window.location.href.indexOf("demo") == -1 ? "" :  scriptType;	
-		    $.getScript("lib/myWarehouseVisualizer" +  scriptType  + ".js");
-		
-		</script>
+    <!-- Demo Data -->
+    <script src="data/warehouseList.js"></script>
 
-	</head>
+    <!--Translations and Data Visualizer Code -->
+    <link rel="stylesheet" href="css/dataVisualizer.css">
+    <script src="translations/translations.js"></script>
+    <script>
+        var scriptType = "Obfuscated";
+        //scriptType = window.location.href.indexOf("demo") == -1 ? "" :  scriptType;	
+        $.getScript("lib/myWarehouseVisualizer" + scriptType + ".js");
 
-	<body></body>
+    </script>
+
+</head>
+
+<body></body>
 
 </html>

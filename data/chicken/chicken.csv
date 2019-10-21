@@ -1,0 +1,6 @@
+name,Metric1,Metric2,COLOR_Metric2
+body,4,5,yellow
+leftWing,3,0,green
+rightWing,4,1,red
+leftLeg,1,2,yellow
+rightLeg,2,3,blue
