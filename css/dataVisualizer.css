@@ -1,12 +1,3 @@
-/* Just lie w2ui's class, but with gridColumnSelection class name*/ 
-.w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.gridColumnSelection,
-.w2ui-grid .w2ui-grid-body .w2ui-grid-frecords table tr.gridColumnSelection,
-.w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr td.gridColumnSelection,
-.w2ui-grid .w2ui-grid-body .w2ui-grid-frecords table tr td.gridColumnSelection {
-  color: #000000 !important;
-  background-color: #b6d5ff !important;
-}
-
 #drop-area {
   border: 2px dashed #ccc;
   border-radius: 20px;

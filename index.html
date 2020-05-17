@@ -57,7 +57,7 @@
     <script src="translations/translations.js"></script>
     <script>
         var scriptType = "Obfuscated";
-        //scriptType = window.location.href.indexOf("demo") == -1 ? "" :  scriptType;	
+        scriptType = window.location.href.indexOf("demo") == -1 ? "" :  scriptType;	
         $.getScript("lib/myWarehouseVisualizer" + scriptType + ".js");
 
     </script>
