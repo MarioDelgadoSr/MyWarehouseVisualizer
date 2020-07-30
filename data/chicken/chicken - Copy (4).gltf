@@ -616,12 +616,6 @@
     ],
     "meshes": [
         {
-            "extras": {		
-                "DIRECT_TO_CONSUMER": 534622,
-                "COMMERCIAL": 133690,
-                "RETURNS": 1504,
-				"LOSS": 670
-            },			
             "name": "body",
             "primitives": [
                 {
@@ -637,12 +631,6 @@
             ]
         },
         {
-            "extras": {		
-                "DIRECT_TO_CONSUMER": 268194,
-                "COMMERCIAL": 335243,
-                "RETURNS": 871,
-				"LOSS": 66178
-            },		
             "name": "leftLeg",
             "primitives": [
                 {
@@ -658,12 +646,6 @@
             ]
         },
         {
-            "extras": {		
-                "DIRECT_TO_CONSUMER": 469340,
-                "COMMERCIAL": 167621,
-                "RETURNS": 670,
-				"LOSS": 32855
-            },		
             "name": "leftWing",
             "primitives": [
                 {
@@ -679,12 +661,6 @@
             ]
         },
         {
-            "extras": {		
-                "DIRECT_TO_CONSUMER": 268194,
-                "COMMERCIAL": 335243,
-                "RETURNS": 871,
-				"LOSS": 66178
-            },		
             "name": "rightLeg",
             "primitives": [
                 {
@@ -700,12 +676,6 @@
             ]
         },
         {
-            "extras": {		
-                "DIRECT_TO_CONSUMER": 469340,
-                "COMMERCIAL": 167621,
-                "RETURNS": 670,
-				"LOSS": 32855
-            },				
             "name": "rightWing",
             "primitives": [
                 {
