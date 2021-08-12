@@ -11,7 +11,7 @@ Download zip of code, unzip to a folder and launch index.html from a web server 
 
 ## Documentation
 
-* [My Warehouse Visualizer Documentation] (https://github.com/MarioDelgadoSr/MyWarehouseVisualizerDoc#my-warehouse-visualizer-documentation)
+* [My Warehouse Visualizer Documentation](https://github.com/MarioDelgadoSr/MyWarehouseVisualizerDoc#my-warehouse-visualizer-documentation)
 
 ## Built With
 
