@@ -1,6 +1,8 @@
 # My Warehouse Visualizer
  Visualize Physical Warehouse Layouts And Their Associated Data
  
+ ![Screen Shot of My Warehouse Visualizer](https://github.com/MarioDelgadoSr/MyWarehouseVisualizerDoc/blob/master/img/MyWarehouseVisualizerDamagedAnalysis.png)
+ 
 ## Installation
 
 Download zip of code, unzip to a folder and launch index.html from a web server with a [WebGL enabled browser](https://get.webgl.org/). 
